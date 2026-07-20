@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snip · free file upload</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="shell">
+        <header class="site-header">
+            <div>
+                <h1>snip</h1>
+                <p class="tagline">simple file upload</p>
+            </div>
+            
+        </header>
+        <section class="info">
+            <p class="info1">
+                share files for free with nest.rip Up to 100mb per file!
+            </p>
+        </section>
+        <section class="panel">
+            <form id="upload-form">
+                <label id="upload-target" class="upload-target" for="file">
+                    <span class="upload-arrow">↓</span>
+                    <strong>drag or browse files to upload</strong>
+                    <small>one file up to 100mb (NOTE .exe files will be sent to virus total. If found malicious they may get automatically deleted.)</small>
+                    <input id="file" type="file">
+                </label>
+                <p id="file-summary" class="file-summary">no file selected</p>
+                <div class="domain-field">
+                    <label for="domain">link domain</label>
+                    <select id="domain" disabled>
+                        <option value="nest.rip">loading domains</option>
+                    </select>
+                </div>
+                <p id="domain-hint" class="domain-hint">
+                    selected domain = link to the file
+                </p>
+                <div class="actions">
+                    <button id="upload-button" type="submit" disabled>upload</button>
+                    <button id="cancel-button" class="secondary" type="button" hidden>cancel</button>
+                </div>
+            </form>
+            <div id="progress" class="progress" hidden aria-live="polite">
+                <div class="progress-head">
+                    <span id="stage">uploading</span>
+                    <span id="percent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <span id="progress-bar" class="progress-bar"></span>
+                </div>
+                <span id="bytes">0 B / 0 B</span>
+            </div>
+            <div id="message" class="message" aria-live="polite"></div>
+        </section>
+        <footer>
+            <span>snip. Powered by nest.rip</span>
+        </footer>
+    
+</body>
+</html>
