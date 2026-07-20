@@ -61,6 +61,18 @@ footer {
     letter-spacing: 0.08em;
 }
 
+.eyebrow {
+    margin: 0;
+    color: #4f7b59;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+}
+
+.eyebrow.error {
+    color: #a6493c;
+}
+
 .info {
     max-width: 700px;
     margin: 30px 0;
@@ -258,6 +270,19 @@ footer {
 
 [hidden] {
     display: none !important;
+}
+
+@media (max-width: 560px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .domain-field {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 560px) {

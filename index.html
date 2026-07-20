@@ -14,7 +14,7 @@
                 <h1>snip</h1>
                 <p class="tagline">simple file upload</p>
             </div>
-            
+            <p id="api-status" class="eyebrow" aria-live="polite">api: checking</p>
         </header>
         <section class="info">
             <p class="info1">
@@ -26,7 +26,7 @@
                 <label id="upload-target" class="upload-target" for="file">
                     <span class="upload-arrow">↓</span>
                     <strong>drag or browse files to upload</strong>
-                    <small>one file up to 100mb (NOTE .exe files will be sent to virus total. If found malicious they may get automatically deleted.)</small>
+                    <small>one file up to 100 MB (EXE files may be scanned by VirusTotal and deleted if malicious)</small>
                     <input id="file" type="file">
                 </label>
                 <p id="file-summary" class="file-summary">no file selected</p>
@@ -59,6 +59,6 @@
         <footer>
             <span>snip. Powered by nest.rip</span>
         </footer>
-    
+    </main>
 </body>
 </html>
