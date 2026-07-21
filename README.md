@@ -7,9 +7,6 @@ A free and simple way to upload and share files.
 ## What is snip?
 
 snip is a small file-sharing website I built for quickly uploading files and sharing them with other people.
-
-There is no complicated interface. You choose a file, select a domain, upload it and receive a link that can be shared immediately.
-
 ## Features
 
 - File uploads up to **100 MB** (FOR FREE!!!!)
